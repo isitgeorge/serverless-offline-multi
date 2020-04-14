@@ -1,0 +1,20 @@
+{
+  "name": "serverless-offline-multi",
+  "version": "1.0.0",
+  "description": "Wrapper for serverless-offline to enable multi instances",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "isitgeorge",
+  "bin": {
+    "serverless-offline-multi": "./bin/multi.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "5.1.0",
+    "get-installed-path": "4.0.8",
+    "minimist": "1.2.5",
+    "nodemon": "2.0.3"
+  }
+}
