@@ -1,7 +1,7 @@
 {
   "name": "serverless-offline-multi",
-  "version": "1.0.0",
-  "description": "Wrapper for serverless-offline to enable multi instances",
+  "version": "1.0.1",
+  "description": "A wrapper for serverless-offline that allows multiple instances to be ran concurrently with watch functionality",
   "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +16,16 @@
     "get-installed-path": "4.0.8",
     "minimist": "1.2.5",
     "nodemon": "2.0.3"
+  },
+  "keywords": [
+    "serverless",
+    "serverless offline",
+    "nodemon",
+    "serverless offline watch",
+    "serverless offline multiple"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isitgeorge/serverless-offline-multi.git"
   }
 }
