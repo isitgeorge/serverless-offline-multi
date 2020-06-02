@@ -25,6 +25,11 @@ These parameters can be repeated (in pairs) for multiple services, as follows:
 serverless-offline-multi --directory service-mailing --port 3001 --directory service-account --port 3002
 ```
 
+## HTTP Port & Lambda Port
+
+* By default, `httpPort` is always the same as `http`.
+* `lambdaPort` is always `httpPort/http` + 1000. Example, running with `--port 3004` will result in: `http: 3004`, `httpPort: 3004` and `lambdaPort: 4004` (port + 1000 to avoid conflict)
+
 ## Contributing
 Contributions are very welcome, and I will gladly merge in features/bug fixes.
 
