@@ -14,16 +14,18 @@ npm install -g serverless-offline-multi
 
 ## Usage
 
-There are three parameters that are passed to the wrapper. For each service, two parameters, `directory` and `port` which specify the relative directory and port number that you wish for the `serverless-offline` process to listen on, respectively. The third optional parameter is `stage`, which should only be specified once.
+There are four parameters that are passed to the wrapper. For each service, three parameters, `directory`,`port` and `watch` which specify the relative directory, the port number that you wish for the `serverless-offline` process to listen on, and a `true` or `false` value specifying whether you want nodemon to watch for changes and restart the service upon detecting a change, respectively.
+
+The fourth and only optional parameter is `stage`, which should only be specified once. If not specified, it's default value is `dev`.
 
 ```bash
-serverless-offline-multi --directory service-mailing --port 3001 --stage dev
+serverless-offline-multi --directory service-mailing --port 3001 --watch true --stage dev
 ```
 
 These parameters can be repeated (in pairs) for multiple services, as follows:
 
 ```bash
-serverless-offline-multi --directory service-mailing --port 3001 --directory service-account --port 3002 --stage test
+serverless-offline-multi --directory service-mailing --port 3001 --watch true --directory service-account --port 3002 --watch false --stage test
 ```
 
 ## HTTP Port & Lambda Port
@@ -38,4 +40,3 @@ Contributions are very welcome, and I will gladly merge in features/bug fixes.
 ## License
 
 MIT
-
