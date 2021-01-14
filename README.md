@@ -22,7 +22,7 @@ The fourth and only optional parameter is `stage`, which should only be specifie
 serverless-offline-multi --directory service-mailing --port 3001 --watch true --stage dev
 ```
 
-These parameters can be repeated (in pairs) for multiple services, as follows:
+These parameters can be repeated (in triples) for multiple services, as follows:
 
 ```bash
 serverless-offline-multi --directory service-mailing --port 3001 --watch true --directory service-account --port 3002 --watch false --stage test
