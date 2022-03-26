@@ -14,7 +14,7 @@
   "dependencies": {
     "concurrently": "5.1.0",
     "get-installed-path": "4.0.8",
-    "minimist": "1.2.5",
+    "minimist": "1.2.6",
     "nodemon": "2.0.3"
   },
   "keywords": [
