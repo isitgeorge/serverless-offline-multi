@@ -16,7 +16,7 @@
     "get-installed-path": "4.0.8",
     "lodash": "^4.17.20",
     "minimist": "1.2.5",
-    "nodemon": "2.0.3"
+    "nodemon": "2.0.20"
   },
   "keywords": [
     "serverless",
